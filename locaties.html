@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <!--BOOTSTRAP CSS LINKEN-->
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
     <!--EIGEN CSS LINKEN-->
     <link rel="stylesheet" href="css/style.css">
     <!-- FONTS   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
     <title>Locaties</title>
 </head>
 
 <body>
-
-    <!--START NAVBAR-->
-    <!-- Navbar wrapper -->
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-
-        <!-- Collapse button voor mobile doeleinden -->
-        <!-- Let op dat je data-target overeen komt met het id van de overkoepelende div hieronder -->
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top stroke navbar-toggleable-md">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
         </button>
-        <!-- Einde collapse button voor mobile doeleinden -->
-
-        <!-- Navbar logo of brandnaam -->
-        <a class="navbar-brand" href="#">Navbar</a>
-        <!-- Einde navbar logo of brandnaam -->
-
-        <!-- Overkoepelende div waarmee we zeggen welk deel moet inklappen bij mobile -->
+        <a class="navbar-brand" href="index.html">
+            <div class="logoicoon"></div>
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!-- Navbar knoppen en links -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-                </li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./locaties.html">Locaties</a>
@@ -51,144 +48,182 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./catering.html">Catering</a>
+                </li>
             </ul>
-            <!-- Einde navbar knoppen en links -->
-
         </div>
-        <!-- Einde overkoepelende div -->
-
     </nav>
-    <!-- Einde navbar wrapper -->
 
-    <!--EIND NAVABAR-->
-
-    <!-- ==== TITEL ==== -->
-    <div class="fruittruck">
+    <!-- TITEL -->
+    <div id="headerlocaties">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 centered">
-                    <h2>Waar kan je ons vinden?</h2>
-                    <hr class="hr_onder spacerwhite">
-                    <div class="clearfix"></div>
-                    <p>Kom onze Fruit Truck opzoeken in uw buurt of zoek ons op een event
-                    </p>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 centered">
+                    <h2 class="headertitel">waar kan je ons vinden?</h2>
+                    <hr class="hr_onder hr_wit">
                 </div>
             </div>
         </div>
         <br>
         <br>
     </div>
-    <!-- titel ->
 
- <!- ==== GOOGLE MAP ==== -->
-    <div class="section-colored">
-        <div class="container">
-            <div class="row color">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h2>Locaties</h2>
-                    <hr class="hr_onder hr_links">
+    <!-- GOOGLE MAP -->
+    <div class="wrap" id="locaties">
+        <div class="container scheef_twee">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                    <h2 class="titel wit">Locaties</h2>
+                    <hr class="hr_onder hr_links hr_wit">
                     <div class="clearfix"></div>
                     <h4>Kom ons opzoeken in verschillende grote steden!
                     </h4>
                     <br>
-                    <p>Food trucks zijn de laatst nieuwe hipste manier om dat lijf van je van eten en drinken te voorzien! Er
-                        zijn dan ook heel wat gelegenheden om ons te spotten: festivals, markten, buurtfeesten, trouws,…
+                    <p>Food trucks zijn de laatst nieuwe hipste manier om dat lijf van je van eten en drinken te voorzien!
+                        <br> Er zijn dan ook heel wat gelegenheden om ons te spotten: festivals, markten, buurtfeesten, bruiloften,…
+                        <br>
+                        <br> Onze hoofdstandplaats is in Antwerpen aan de Groenplaats.
+                        <br>We hebben ook standplaatsen in Gent en in Brugge.
                     </p>
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
                     <!-- google map -->
-                    <div class="img-fluid" id="map" style="width:900px;height:550px;"></div>
+                    <div class="img-fluid" id="map"></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- google map-->
-    <!-- ==== LOCATIES ==== -->
-    <div class="container locaties">
-        <div class="row centered">
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="http://placehold.it/200" width="200" alt="Antwerpen">
-                <h4 class="stad">Antwerpen</h4>
-                <p>
-                    <strong>Foodmarket 'Mercado'
-                    </strong>
-                    <br>
-                    <br>Groenplaats 43, Antwerpen
-                    <br>
-                    <small>MA-WO: 11u00 tot 22u00</small>
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="http://placehold.it/200" width="200" alt="Gent">
-                <h4 class="stad">Gent</h4>
-                <p>
-                    <strong>De Korenmarkt
-                    </strong>
-                    <br>
-                    <br> In het centrum van Gent
-                    <br>
-                    <small>DO: 11:00 tot 14:00</small>
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="http://placehold.it/200" width="200" alt="Brugge">
-                <h4 class="stad">Brugge</h4>
-                <p>
-                    <strong>De Markt
-                    </strong>
-                    <br>
-                    <br> In het centrum van Brugge
-                    <br>
-                    <small>VRIJ: 10:00 - 14:00</small>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- locaties -->
-    <!-- FRUIT TRUCK 2 -->
-    <div class="section-colored" id="bgimage">
+
+    <!-- LOCATIES  -->
+    <div class="patroon_roze">
         <div class="container">
-            <div class="row color">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img class="img-fluid" src="http://placehold.it/500x450">
+            <div class="row centered">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="rounded-circle fotostad" src="./img/antwerpen.jpg" alt="Antwerpen" id="antwerpen">
+                    <div class="speech-bubble">
+                        <h4>Antwerpen</h4>
+                        <p class="tekststad">
+                            <strong>Foodmarket 'Mercado'
+                            </strong>
+                            <br>
+                            <br>Groenplaats 43, Antwerpen
+                            <br>
+                            <small>MA-WO: 11u00 tot 22u00</small>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2>Zoek ons op een event</h2>
-                    <hr class="hr_onder hr_links">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="rounded-circle fotostad" src="./img/gent.jpg" alt="Gent" id="gent">
+                    <div class="speech-bubble">
+                        <h4>Gent</h4>
+                        <p>
+                            <strong>De Korenmarkt
+                            </strong>
+                            <br>
+                            <br> In het centrum van Gent
+                            <br>
+                            <small>DO: 11:00 tot 14:00</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="rounded-circle fotostad" src="./img/brugge.jpg" alt="Brugge" id="brugge">
+                    <div class="speech-bubble">
+                        <h4>Brugge</h4>
+                        <p>
+                            <strong>De Grote Markt
+                            </strong>
+                            <br>
+                            <br> In het centrum van Brugge
+                            <br>
+                            <small>VRIJ: 10:00 - 14:00</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENT -->
+    <div class="wrap">
+        <div class="container scheef_een event">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="img-fluid eventimg" src="./img/fruittruckcartoonevent.png" alt="cartoon foodtruck">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h2 class="titel wit">Zoek ons op een event</h2>
+                    <hr class="hr_onder hr_links hr_wit">
                     <div class="clearfix"></div>
                     <p>In het verleden stonden we al op verschillende grote events waaronder:</p>
                     <ul>
-                        <li>Pukkelpop</li>
-                        <li>Rock Werchter</li>
-                        <li>Cactusfestival</li>
-                        <li>Food festival</li>
+                        <li>
+                            <i class="fa fa-check vinkje" aria-hidden="true"></i>Pukkelpop</li>
+                        <li>
+                            <i class="fa fa-check vinkje" aria-hidden="true"></i>Rock Werchter</li>
+                        <li>
+                            <i class="fa fa-check vinkje" aria-hidden="true"></i>Cactusfestival</li>
+                        <li>
+                            <i class="fa fa-check vinkje" aria-hidden="true"></i>Lokale events</li>
                     </ul>
-                    <p>Wij komen ook naar
+                    <p class="centered">Wij komen ook naar
                         <strong>uw event!</strong>
-                        <span></span>
-                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <span>
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
                         </span>
                     </p>
                     <div class="row centered">
-                        <div class="col-lg-12">
-                            <a href="./contact.html">
-                                <button type="button" class="btn btn-primary">Contacteer ons</button>
-                            </a>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <a class="btn btn-primary knop" href="./catering.html" role="button">huur ons</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- fruit truck 2-->
+
     <!-- FOOTER -->
-    <div id="footerwrap">
+    <div class="footer">
         <div class="container">
-            <h4>Gemaakt door
-                <a href="productiedossier">Delphine Delie</a> - New Media Design II</h4>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>Locaties</h4>
+                    <p>
+                        <a href="locaties.html#antwerpen">
+                            Antwerpen</a>
+                        <br/>
+                        <a href="locaties.html#brugge">Brugge</a>
+                        <br/>
+                        <a href="locaties.html#gent">Gent</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>Volg ons</h4>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCK5ICQRp_mtYv48bs30ZuGA?view_as=subscriber">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a>
+                        <br/>
+                        <a href="instagram.com">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+                        <br/>
+                        <a href="https://www.facebook.com/profile.php?id=139639223418676&ref=br_rs">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>The Fruit Truck</h4>
+                    <p>door Delphine Delie
+                        <br>
+                        <a href="dossier.pdf">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            dossier</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <!--footer-->
+
     <!-- end content -->
     <!-- Bootstrap core JavaScript
         ================================================== -->

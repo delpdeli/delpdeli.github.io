@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <!--BOOTSTRAP CSS LINKEN-->
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
     <!--EIGEN CSS LINKEN-->
     <link rel="stylesheet" href="css/style.css">
     <!-- FONTS   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <!-- MAILCHIMP -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <!-- start content -->
     <title>Contact</title>
 </head>
 
 <body>
-
-    <!--START NAVBAR-->
-    <!-- Navbar wrapper -->
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-
-        <!-- Collapse button voor mobile doeleinden -->
-        <!-- Let op dat je data-target overeen komt met het id van de overkoepelende div hieronder -->
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top stroke navbar-toggleable-md">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
         </button>
-        <!-- Einde collapse button voor mobile doeleinden -->
-
-        <!-- Navbar logo of brandnaam -->
-        <a class="navbar-brand" href="#">Navbar</a>
-        <!-- Einde navbar logo of brandnaam -->
-
-        <!-- Overkoepelende div waarmee we zeggen welk deel moet inklappen bij mobile -->
+        <a class="navbar-brand" href="index.html">
+            <div class="logoicoon"></div>
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!-- Navbar knoppen en links -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-                </li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./locaties.html">Locaties</a>
@@ -51,39 +50,186 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./catering.html">Catering</a>
+                </li>
             </ul>
-            <!-- Einde navbar knoppen en links -->
-
         </div>
-        <!-- Einde overkoepelende div -->
-
     </nav>
-    <!-- Einde navbar wrapper -->
 
-    <!--EIND NAVABAR-->
-    <!-- ==== TITEL ==== -->
-    <div class="fruittruck">
+    <!-- TITEL -->
+    <div id="headercontact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 centered">
-                    <h2>Neem contact met ons op</h2>
-                    <hr class="hr_onder spacerwhite">
-                    <div class="clearfix"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 centered">
+                    <h2 class="headertitel">neem contact met ons op</h2>
+                    <hr class="hr_onder hr_wit">
                 </div>
             </div>
         </div>
         <br>
         <br>
     </div>
-    <!-- titel -->
-    <!-- ==== FOOTER ==== -->
-    <div id="footerwrap">
-        <div class="container">
-            <h4>Gemaakt door
-                <a href="productiedossier">Delphine Delie</a> - New Media Design II</h4>
+
+    <!-- CONTACTFORM -->
+    <div class="wrap">
+        <div class="container scheef_twee" id="contactformulier">
+            <div class="row mt">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 centered">
+                    <h3 class="titel wit">STUUR EEN BERICHT</h3>
+                    <hr class="hr_onder hr_wit">
+                    <p>Heb je een vraag of wil je ons iets zeggen?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 centered">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="NameInputEmail1" placeholder="Je naam">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Je e-mail">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="subjectEmail1" placeholder="Onderwerp">
+                            <br>
+                        </div>
+                        <textarea class="form-control" rows="6" placeholder="Schrijf je bericht hier"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-lg knop">Verstuur</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    <!--footer-->
+
+    <!-- SOCIALE MEDIA -->
+    <div class="patroon_geel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="titel centered">VOLG ONS</h3>
+                    <hr class="hr_onder hr_rood">
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 centered">
+                    <img src="./img/instagram.png" class="img-fluid" alt="gsm" id="gsm">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <p class="contacttekst">We brengen dagelijks verslag uit op sociale media. Mis niets!</p>
+                    <div id="socialemedia">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 donker">
+                                <h4 class="ml">FACEBOOK</h4>
+                                <p class="centered">
+                                    <a href="https://www.facebook.com/profile.php?id=139639223418676&ref=br_rs">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </p>
+                                <p class="ml">Word een vriend</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 licht">
+                                <h4 class="ml">YOUTUBE</h4>
+                                <p class="centered">
+                                    <a href="https://www.youtube.com/channel/UCK5ICQRp_mtYv48bs30ZuGA?view_as=subscriber">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </p>
+                                <p class="ml">Bekijk ons</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 donker">
+                                <h4 class="ml">INSTAGRAM</h4>
+                                <p class="centered">
+                                    <a href="https://www.instagram.com/">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </p>
+                                <p class="ml">Volg ons</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NIEUWSBRIEF -->
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 centered">
+                    <h3 class="titel">BLIJF OP DE HOOGTE</h3>
+                    <hr class="hr_onder hr_rood">
+                    <p class="contacttekst">Schrijf je in op onze nieuwsbrief</p>
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form action="http://eepurl.com/dfbUm5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                            target="_blank" novalidate>
+                            <div class="form-group m-b-0">
+                                <input type="email" class="form-control input-subscribe" id="mce-EMAIL" name="EMAIL" placeholder="Je-mail">
+                                <label for="mce-EMAIL"></label>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_a67927d8b5504872b4d7d5876_3b4cb8b4b0" tabindex="-1" value="">
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="inschrijven" name="subscribe" id="mc-embedded-subscribe" class="button knop">
+                            </div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>Locaties</h4>
+                    <p>
+                        <a href="locaties.html#antwerpen">
+                            Antwerpen</a>
+                        <br/>
+                        <a href="locaties.html#brugge">Brugge</a>
+                        <br/>
+                        <a href="locaties.html#gent">Gent</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>Volg ons</h4>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCK5ICQRp_mtYv48bs30ZuGA?view_as=subscriber">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a>
+                        <br/>
+                        <a href="instagram.com">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+                        <br/>
+                        <a href="https://www.facebook.com/profile.php?id=139639223418676&ref=br_rs">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>The Fruit Truck</h4>
+                    <p>door Delphine Delie
+                        <br>
+                        <a href="dossier.pdf">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            dossier</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- end content -->
     <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -95,6 +241,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
     <script src="js/fruittruck.js"></script>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 
 </body>
 

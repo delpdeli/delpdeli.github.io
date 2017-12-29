@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <!--BOOTSTRAP CSS LINKEN-->
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
     <!--EIGEN CSS LINKEN-->
     <link rel="stylesheet" href="css/style.css">
     <!-- FONTS   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
     <title>Ons Menu</title>
 </head>
 
 <body>
-
-    <!--START NAVBAR-->
-    <!-- Navbar wrapper -->
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-
-        <!-- Collapse button voor mobile doeleinden -->
-        <!-- Let op dat je data-target overeen komt met het id van de overkoepelende div hieronder -->
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top stroke navbar-toggleable-md">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+
         </button>
-        <!-- Einde collapse button voor mobile doeleinden -->
-
-        <!-- Navbar logo of brandnaam -->
-        <a class="navbar-brand" href="#">Navbar</a>
-        <!-- Einde navbar logo of brandnaam -->
-
-        <!-- Overkoepelende div waarmee we zeggen welk deel moet inklappen bij mobile -->
+        <a class="navbar-brand" href="index.html">
+            <div class="logoicoon"></div>
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <!-- Navbar knoppen en links -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-                </li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./locaties.html">Locaties</a>
@@ -51,255 +49,316 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./catering.html">Catering</a>
+                </li>
             </ul>
-            <!-- Einde navbar knoppen en links -->
-
         </div>
-        <!-- Einde overkoepelende div -->
-
     </nav>
-    <!-- Einde navbar wrapper -->
+    <!-- navbar -->
 
-    <!--EIND NAVABAR-->
-    <!-- ==== TITEL ==== -->
-    <div class="fruittruck">
+    <!--  TITEL  -->
+    <div id="headermenu">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 centered">
-                    <h2>Maak een keuze uit ons heerlijk assortiment</h2>
-                    <hr class="hr_onder spacerwhite">
-                    <div class="clearfix"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 centered">
+                    <h2 class="headertitel">wat hebben we in de aanbieding?</h2>
+                    <hr class="hr_onder hr_wit">
                 </div>
             </div>
         </div>
         <br>
         <br>
     </div>
-    <!-- titel -->
-    <!-- AANBOD -->
-    <div class="container centered menuitems">
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#smoothie">
-                    <img class="img-fluid menufoto" src="http://placehold.it/300">
-                </a>
-                <h3 class="aanbod">
-                    Heerlijke Smoothies
-                </h3>
+
+    <!-- AANBOD-->
+    <div class="patroon_groen">
+        <div class="container aanbod">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <figure class="aanbod_inhoud">
+                        <img class="img-fluid" src="./img/smoothie.jpg" alt="foto smoothie">
+                        <figcaption class="hover centered">
+                            <a href="#smoothie"></a>
+                            <button type="button" class="btn btn-primary btn-lg knop">smoothies</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <figure class="aanbod_inhoud">
+                        <img class="img-fluid" src="./img/sap.jpg" alt="foto sapjes">
+                        <figcaption class="hover centered">
+                            <a href="#sapjes"></a>
+                            <button type="button" class="btn btn-primary btn-lg knop">sapjes</button>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
 
-            <div class="col-md-6">
-                <a href="#sapjes">
-                    <img class="img-fluid menufoto" src="http://placehold.it/300">
-                </a>
-                <h3>
-                    Verse Sapjes
-                </h3>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-6">
-                <a href="#yoghurt">
-                    <img class="img-fluid menufoto" src="http://placehold.it/300">
-                </a>
-                <h3 class="aanbod">
-                    Fruit Yoghurt
-                </h3>
-            </div>
-
-            <div class="col-md-6">
-                <a href="#fruitsalades">
-                    <img class="img-fluid menufoto" src="http://placehold.it/300">
-                </a>
-                <h3 class="aanbod">
-                    Fruitsalades
-                </h3>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <figure class="aanbod_inhoud">
+                        <img class="img-fluid" src="./img/yoghurt.jpg" alt="foto yoghurt">
+                        <figcaption class="hover centered">
+                            <a href="#yoghurt"></a>
+                            <button type="button" class="btn btn-primary btn-lg knop">yoghurt</button>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <figure class="aanbod_inhoud">
+                        <img class="img-fluid" src="./img/fruitsalade.jpg" alt="foto fruitsalade">
+                        <figcaption class="hover centered">
+                            <a href="#fruitsalades"></a>
+                            <button type="button" class="btn btn-primary btn-lg knop">fruitsalade</button>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
-    <!-- aanbod -->
+
     <!-- SMOOTHIES -->
-    <div class="section-colored" id="bgimage">
+
+    <!-- carousel -->
+    <div id="section-smoothie">
         <div class="container" id="smoothie">
-            <div class="row color">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div id="" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                    <div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="http://placehold.it/500x400" alt="Blending Banana smoothie">
+                            <div id="car-banana" class="carousel-item active">
+                                <img class="d-block w-100 img-fluid imgsmoothie" src="./img/blendingbanana.jpg" alt="Blending Banana smoothie">
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="http://placehold.it/500x400" alt="Sweet Strawberry smoothie">
+                            <div id="car-strawberry" class="carousel-item">
+                                <img class="d-block w-100 img-fluid imgsmoothie" src="./img/sweetstrawberry.jpg" alt="Sweet Strawberry smoothie">
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="http://placehold.it/500x400" alt="Bubbling Blueberry smoothie">
+                            <div id="car-blueberry" class="carousel-item">
+                                <img class="d-block w-100 img-fluid imgsmoothie" src="./img/bubblingblueberry.jpg" alt="Bubbling Blueberry smoothie">
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="http://placehold.it/500x400" alt="Cold kiwi smoothie">
+                            <div id="car-kiwi" class="carousel-item">
+                                <img class="d-block w-100 img-fluid imgsmoothie" src="./img/coldkiwi.jpg" alt="Cold kiwi smoothie">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2>Heerlijke Smoothies</h2>
-                    <hr class="hr_onder hr_links">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <h2 class="titel">Heerlijke smoothies</h2>
+                    <hr class="hr_onder hr_links hr_rood">
                     <div class="clearfix"></div>
-                    <ul class="nav nav-pills" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#banana" role="tab" data-toggle="tab">Blending Banana</a>
+                    <ul id="carouselnavigatie" class="nav nav-pills" role="tablist">
+                        <li class="nav-item tabknop">
+                            <a class="nav-link active" data-carousel="car-banana" href="#banana" role="tab" data-toggle="tab">Blending
+                                <br>Banana</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#strawberry" role="tab" data-toggle="tab">Sweet Strawberry</a>
+                        <li class="nav-item tabknop">
+                            <a class="nav-link" data-carousel="car-strawberry" href="#strawberry" role="tab" data-toggle="tab">Sweet
+                                <br>Strawberry</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blueberry" role="tab" data-toggle="tab">Bubbling Blueberry</a>
+                        <li class="nav-item tabknop">
+                            <a class="nav-link" data-carousel="car-blueberry" href="#blueberry" role="tab" data-toggle="tab">Bubblin
+                                <br>Blueberry</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#kiwi" role="tab" data-toggle="tab">Cold Kiwi</a>
+                        <li class="nav-item tabknop">
+                            <a class="nav-link" data-carousel="car-kiwi" href="#kiwi" role="tab" data-toggle="tab">Cold
+                                <br>Kiwi</a>
                         </li>
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content">
 
-                        <div role="tabpanel" class="tab-pane fade in active" id="banana">
+                        <div role="tabpanel" class="tab-pane in active teksttab" id="banana">
                             <br>
                             <h3>Blending Banana</h3>
                             <p>
                                 <small>Ingrediënten</small>
+                                <br>
+                                <img src="./img/orange.png" alt="appelsien" class="icoonfruit">
+                                <img src="./img/yogurt.png" alt="yoghurt" class="icoonfruit">
+                                <img src="./img/bananas.png" alt="banaan" class="icoonfruit">
+                                <img src="./img/apple.png" alt="appel" class="icoonfruit">
+                                <img src="./img/honey.png" alt="honing" class="icoonfruit">
+                                <br>
+                                <br> Deze energieboostende smoothie is pure brandstof voor je spieren. Het is precies wat je
+                                nodig hebt om je dag te starten.
                             </p>
-                            <img src="./img/orange.png" alt="appel" width="25px">
-                            <img src="./img/yogurt.png" alt="appel" width="25px">
-                            <img src="./img/bananas.png" alt="appel" width="25px">
-                            <img src="./img/apple.png" alt="appel" width="25px">
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="strawberry">
+                        <div role="tabpanel" class="tab-pane fade teksttab" id="strawberry">
                             <br>
                             <h3>Sweet Strawberry</h3>
                             <p>
                                 <small>Ingrediënten</small>
+                                <br>
+                                <img src="./img/strawberry.png" alt="aardbei" class="icoonfruit">
+                                <img src="./img/milk.png" alt="melk" class="icoonfruit">
+                                <img src="./img/bananas.png" alt="banaan" class="icoonfruit">
+                                <img src="./img/blueberries.png" alt="blauwe bes" class="icoonfruit">
+                                <img src="./img/cherrie.png" alt="kers" class="icoonfruit">
+                                <br>
+                                <br>De aardbei is op zich al heerlijk van smaak, maar het is ook een perfecte basis voor een
+                                gezondheidsbevorderende vitaminenboost.
                             </p>
-                            <img src="./img/orange.png" alt="appel" width="25px">
-                            <img src="./img/yogurt.png" alt="appel" width="25px">
-                            <img src="./img/strawberry.png" alt="appel" width="25px">
-                            <img src="./img/bananas.png" alt="appel" width="25px">
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="blueberry">
+                        <div role="tabpanel" class="tab-pane fade teksttab" id="blueberry">
                             <br>
                             <h3>Bubbling Blueberry</h3>
                             <p>
                                 <small>Ingrediënten</small>
+                                <br>
+                                <img src="./img/blueberries.png" alt="blauwe bes" class="icoonfruit">
+                                <img src="./img/yogurt.png" alt="yoghurt" class="icoonfruit">
+                                <img src="./img/strawberry.png" alt="aardbei" class="icoonfruit">
+                                <img src="./img/apple.png" alt="appel" class="icoonfruit">
+                                <img src="./img/melon.png" alt="meloen" class="icoonfruit">
+                                <br>
+                                <br>Voel je je wat ziekjes? Geef jezelf een duwtje in de rug met deze antioxidanten smoothie.
+                                Deze voedzame smoothie maakt je in no-time terug gezond!
                             </p>
-                            <img src="./img/orange.png" alt="appel" width="25px">
-                            <img src="./img/yogurt.png" alt="appel" width="25px">
-                            <img src="./img/blueberries.png" alt="appel" width="25px">
-                            <img src="./img/strawberry.png" alt="appel" width="25px">
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="kiwi">
+                        <div role="tabpanel" class="tab-pane fade teksttab" id="kiwi">
                             <br>
                             <h3>Cold Kiwi</h3>
                             <p>
                                 <small>Ingrediënten</small>
+                                <br>
+                                <img src="./img/kiwi.png" alt="kiwi" class="icoonfruit">
+                                <img src="./img/melon.png" alt="meloen" class="icoonfruit">
+                                <img src="./img/yogurt.png" alt="yoghurt" class="icoonfruit">
+                                <img src="./img/apple.png" alt="appel" class="icoonfruit">
+                                <img src="./img/honey.png" alt="honing" class="icoonfruit">
+                                <br>
+                                <br> Deze groene smoothie is ideaal om te drinken voor je work-out. Geweldig gezond en nog beter
+                                van smaak. Boordevol voedingsstoffen en licht op de maag.
                             </p>
-                            <img src="./img/orange.png" alt="appel" width="25px">
-                            <img src="./img/yogurt.png" alt="appel" width="25px">
-                            <img src="./img/kiwi.png" alt="appel" width="25px">
-                            <img src="./img/apple.png" alt="appel" width="25px">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- SAPJES -->
-    <div class="cantainer" id="sapjes">
-        <div class="row centered">
+    <div class="wrap">
+        <div class="container scheef_een" id="sapjes">
+            <div class="row centered">
 
-            <div class="col-lg-12">
-                <h2>Sapjes</h2>
-                <hr class="hr_onder">
-                <div class="clearfix"></div>
-            </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="titel wit">Sapjes</h2>
+                    <hr class="hr_onder hr_wit">
+                </div>
+                <br>
+                <p>Geniet van onze lekkere sapjes van vers fruit à la minute voor jou gemaakt om de maximale voedingswaarde
+                    te garanderen.</p>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="img-fluid imgaanbod" src="./img/applejuice.jpg" alt="appelsap">
+                    <h3 class="titelaanbod">Amazing Apple
+                    </h3>
+                </div>
 
-            <div class="col-sm-12 col-lg-4 section_aanbod">
-                <img class="img-fluid" src="http://placehold.it/700x400">
-                <h3>Amazing Apple
-                </h3>
-            </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="img-fluid imgaanbod" src="./img/pineapplejuice.jpg" alt="ananassap">
+                    <h3 class="titelaanbod">Pleasing Pineapple
+                    </h3>
+                </div>
 
-            <div class="col-sm-12 col-lg-4 section_aanbod">
-                <img class="img-fluid" src="http://placehold.it/700x400">
-                <h3>Pleasing Pineapple
-                </h3>
-            </div>
-
-            <div class="col-sm-12 col-lg-4 section_aanbod">
-                <img class="img-fluid" src="http://placehold.it/700x400">
-                <h3>Lip Smacking Lemon
-                </h3>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img class="img-fluid imgaanbod" src="./img/lemonjuice.jpg" alt="citroensap">
+                    <h3 class="titelaanbod">Lip Smacking Lemon
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
-    <!-- sapjes -->
+
     <!-- FRUITSALADES -->
-    <div class="section-colored">
-        <div class="container" id="fruitsalades">
-            <div class="row color">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h2>Fruitsalades</h2>
-                    <hr class="hr_onder hr_links">
+    <div class="patroon_geel wrap">
+        <div class="container">
+            <div class="row" id="fruitsalades">
+                <div class="col-lg-5 col-md-12 col-sm-12 zwart">
+                    <h2 class="titel">Fruitsalades</h2>
+                    <hr class="hr_onder hr_links hr_rood">
                     <div class="clearfix"></div>
                     <br>
-                    <p>Proef onze verse fruitsalade.
+                    <p class="onsmenutekst">Gezond tussendoortje nodig?
+                        <br> Je dagelijkse portie vitaminen nog niet binnengekregen?
+                        <br>
+                        <br>Probeer nu ons verse fruitsalade.
+                        <br> Voor je neus bereidt met heerlijke stukjes aardbei, mango, banaan, appel, peer en sinaasappels.
                     </p>
-                    <p>
-                        <small>Ingrediënten</small>
-                    </p>
-                    <img src="./img/orange.png" alt="appel" width="25px">
-                    <img src="./img/bananas.png" alt="appel" width="25px">
-                    <img src="./img/kiwi.png" alt="appel" width="25px">
-                    <img src="./img/apple.png" alt="appel" width="25px">
                 </div>
-                <div class="col-lg-8 col-md-6 col-sm-12">
-                    <img src="http://placehold.it/500x500" alt="fruitsalades">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <img class="img-fluid" src="./img/fotofruitsalade.jpg" alt="fruitsalades">
                 </div>
             </div>
         </div>
     </div>
-    <!-- fruitsalades -->
+
     <!-- YOGHURT -->
-    <div class="cantainer" id="yoghurt">
-        <div class="row centered">
-            <div class="col-lg-12">
-                <h2>Fruit Yoghurt</h2>
-                <hr class="hr_onder">
-                <div class="clearfix"></div>
-            </div>
+    <div class="wrap">
+        <div class="container scheef_twee" id="yoghurt">
+            <div class="row centered">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="titel wit">Fruityoghurt</h2>
+                    <hr class="hr_onder hr_wit">
+                </div>
+                <br>
+                <p class="centered">Start de dag met onze vers gemaakte fruityoghurt, met of zonder granola.</p>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="img-fluid imgaanbod" src="./img/yoghurt1.jpg" alt="aardbeiyoghurt">
+                    <h3 class="titelaanbod">Strawberrylicious
+                    </h3>
+                </div>
 
-            <div class="col-sm-12 col-lg-6 section_aanbod">
-                <img class="img-fluid" src="http://placehold.it/700x400">
-                <h3>Strawberrylicious
-                </h3>
-            </div>
-
-            <div class="col-sm-12 col-lg-6 section_aanbod">
-                <img class="img-fluid" src="http://placehold.it/700x400">
-                <h3>Peach Perfect
-                </h3>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <img class="img-fluid imgaanbod" src="./img/yoghurt2.jpg" alt="perzikyoghurt">
+                    <h3 class="titelaanbod">Peach Perfect
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
-    <!-- sapjes -->
-    <!-- ==== FOOTER ==== -->
-    <div id="footerwrap">
+
+    <!-- FOOTER -->
+    <div class="footer">
         <div class="container">
-            <h4>Gemaakt door
-                <a href="productiedossier">Delphine Delie</a> - New Media Design II</h4>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>Locaties</h4>
+                    <p>
+                        <a href="locaties.html#antwerpen">
+                            Antwerpen</a>
+                        <br/>
+                        <a href="locaties.html#brugge">Brugge</a>
+                        <br/>
+                        <a href="locaties.html#gent">Gent</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>Volg ons</h4>
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCK5ICQRp_mtYv48bs30ZuGA?view_as=subscriber">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a>
+                        <br/>
+                        <a href="instagram.com">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+                        <br/>
+                        <a href="https://www.facebook.com/profile.php?id=139639223418676&ref=br_rs">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footeritem">
+                    <h4>The Fruit Truck</h4>
+                    <p>door Delphine Delie
+                        <br>
+                        <a href="dossier.pdf">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            dossier</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <!--footer-->
+
     <!-- end content -->
     <!-- Bootstrap core JavaScript
             ================================================== -->
