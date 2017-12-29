@@ -868,12 +868,6 @@ nav ul li a:hover {
     font-size: 17px;
 }
 
-#mce-EMAIL {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
 
 /*sociale media*/
 
@@ -955,6 +949,12 @@ nav ul li a:hover {
 
 /*nieuwsbrief*/
 
+#mailnieuwsbrief {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .newsletter {
     padding: 80px 0;
 }
@@ -964,7 +964,12 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.newsletter .input-subscribe {
+#emailnieuwsbrief {
+    width: 70%;
+    margin: auto;
+}
+
+.newsletter #emailnieuwsbrief {
     background-color: white;
     color: black;
     border: 2px solid #F11442;
@@ -974,25 +979,21 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.newsletter .input-subscribe:focus {
+.newsletter #emailnieuwsbrief:focus {
     border: 2px solid #ce2f3f;
 }
 
-.newsletter input.input-subscribe::-webkit-input-placeholder {
+.newsletter input#emailnieuwsbrief:-webkit-input-placeholder {
     color: #9D9D9C;
     font-weight: normal;
 }
 
-.newsletter input.input-subscribe:-moz-placeholder {
+.newsletter input #emailnieuwsbrief:-moz-placeholder {
     color: #9D9D9C;
 }
 
-.newsletter input.input-subscribe:-ms-input-placeholder {
+.newsletter input#emailnieuwsbrief:-ms-input-placeholder {
     color: #9D9D9C;
-}
-
-#mc-embedded-subscribe.button.knop:focus {
-    outline: none;
 }
 
 
